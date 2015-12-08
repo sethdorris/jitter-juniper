@@ -25,7 +25,11 @@ namespace Jitter
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/main.css"));
+
+            bundles.Add(new ScriptBundle("~/Content/myjavascript").Include(
+                      "~/Content/custom.js"));
         }
     }
 }
